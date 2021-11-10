@@ -10,16 +10,7 @@ import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.html.Image;
-import com.vaadin.flow.component.html.ListItem;
-import com.vaadin.flow.component.html.Nav;
-import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.html.UnorderedList;
-import com.vaadin.flow.component.html.Footer;
-import com.vaadin.flow.component.html.H1;
-import com.vaadin.flow.component.html.H2;
-import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.html.Header;
+import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -39,7 +30,7 @@ import com.vaadin.flow.component.avatar.Avatar;
 /**
  * The main view is a top-level placeholder for other views.
  */
-@PWA(name = "Social networking", shortName = "Social networking", enableInstallPrompt = false)
+@PWA(name = "My App", shortName = "My App", enableInstallPrompt = false)
 @Theme(themeFolder = "myapp")
 @PageTitle("Main")
 public class MainLayout extends AppLayout {
@@ -129,6 +120,8 @@ public class MainLayout extends AppLayout {
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class), //
 
                 new MenuItemInfo("Person Form", "la la-user", PersonFormView.class), //
+                new MenuItemInfo("contact list", "la la-user", com.example.application.view.ContactList.class), //
+
 
         };
         List<RouterLink> links = new ArrayList<>();

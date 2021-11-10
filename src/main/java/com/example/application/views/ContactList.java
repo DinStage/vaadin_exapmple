@@ -1,3 +1,4 @@
+package com.example.application.view;
 import com.example.application.data.entity.Contact;
 import com.example.application.data.service.ContactRepository;
 import com.vaadin.flow.component.UI;
